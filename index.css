@@ -141,16 +141,23 @@ h2{
     scale:1.1;
     border : 1px solid #130404;
 }
-
-#get-logo{
-
+#logo-input{
     width:350px;
     height:22px;
  background-color: rgb(238, 142, 16);
 margin:20px;
 border-radius:12px;
-
 }
+
+/* #get-logo{
+
+    width:350px;
+    height:22px;
+ background-color: rgb(238, 142, 16);
+margin:20px;
+border-radius:12px; */
+
+/* } */
 
 #customised-umbrella:hover{
     transform:rotate(360 deg);

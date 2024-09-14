@@ -52,6 +52,8 @@ box-shadow: 1px 2px 5px black;
 
 }
 .media{
+display:flex;
+align-items:center;
     text-align: center;
 
     width:50%;
@@ -87,7 +89,7 @@ h2{
 #customised-umbrella{
     display:inline-block;
     position:relative;
-    top:20%;
+    /*top:20%;*/
     width:60%;
     min-width:300px;
     transition:transform 10s ease-in-out;
@@ -149,15 +151,7 @@ margin:20px;
 border-radius:12px;
 }
 
-/* #get-logo{
 
-    width:350px;
-    height:22px;
- background-color: rgb(238, 142, 16);
-margin:20px;
-border-radius:12px; */
-
-/* } */
 
 #customised-umbrella:hover{
     transform:rotate(360 deg);

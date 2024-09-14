@@ -55,7 +55,7 @@ box-shadow: 1px 2px 5px black;
     text-align: center;
 
     width:50%;
-    min-width:350px;
+    min-width:380px;
     background-color: black;
     /* background: linear-gradient(black,rgb(38, 32, 32)); */
 
@@ -66,7 +66,7 @@ box-shadow: 1px 2px 5px black;
     flex-direction: column;
     padding: 50px 20px;
     width:50%;
-    min-width:350px;
+    min-width:380px;
     justify-content: center;
     align-items: center;;
     background-color: rgb(144, 134, 134);
@@ -147,7 +147,6 @@ h2{
     width:85vmin;
     max-width:350px;
     height:22px;
-    border:none;
     justify-content: center;
 background-color: rgb(238, 142, 16);
 margin:20px;

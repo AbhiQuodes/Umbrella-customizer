@@ -1,8 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+@media screen and (max-width : 700px){
+
+    .media{
+        height:70vh;
+        
+    }
+  .box{
+    height:60vh;
+  }
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:  sans-serif;
+    line-height:1.5;
 }
 
 body{
@@ -18,12 +40,14 @@ margin:auto;
 flex-wrap: wrap;
 /* padding:0px 25px; */
 width:100vw;
+justify-content: center;
 /* min-width: 550px; */
 /* height:100vh; */
 min-height:100vh;
-background-color: rgba(38, 130, 130, 0.25);
+/* background-color: rgba(38, 130, 130, 0.25); */
 border-radius: 15px;
 box-shadow: 1px 2px 5px black;
+/* background: linear-gradient(black,rgb(144, 134, 134)); */
 
 
 }
@@ -31,22 +55,23 @@ box-shadow: 1px 2px 5px black;
     text-align: center;
 
     width:50%;
-    min-width:400px;
-    height:100vh;
+    min-width:350px;
     background-color: black;
+    /* background: linear-gradient(black,rgb(38, 32, 32)); */
 
 }
 
 .box{
     display:flex;
     flex-direction: column;
-    padding: 50px 30px;
+    padding: 50px 20px;
     width:50%;
-    min-width:400px;
-    height:100vh;
+    min-width:350px;
     justify-content: center;
     align-items: center;;
     background-color: rgb(144, 134, 134);
+    /* background: linear-gradient(185deg,rgb(38, 32, 32),rgb(233, 227, 227)); */
+
 }
 
 h2{
@@ -55,17 +80,21 @@ h2{
     color:white;
     top: 60px;
 
+
     
 }
+
 #customised-umbrella{
+    display:inline-block;
     position:relative;
     top:20%;
-    /* height:auto; */
     width:60%;
     min-width:300px;
+    transition:transform 10s ease-in-out;
 }
 #heading{
-    font-size: 30px;
+    font-size: 1.6em;
+    text-align:center;
     margin:40px;
     position:relative;
     top:-50px;
@@ -80,8 +109,8 @@ h2{
     border:1px solid red;
     padding:10px;
     border-radius:14px;
-    height:50px;
-
+    height:60px;
+    
 }
 .color-Options{
     width:40px;
@@ -89,7 +118,8 @@ h2{
     opacity:90%;
     border-radius:50%;
     margin:10px 20px;
-
+    box-shadow:2px 3px 5px black;
+    
 }
 #color-Pink{
 
@@ -112,12 +142,21 @@ h2{
     border : 1px solid #130404;
 }
 
-#logo-Input{
+#get-logo{
 
     width:85vmin;
     max-width:350px;
-    height:30px;
+    height:22px;
     border:none;
+    justify-content: center;
+background-color: rgb(238, 142, 16);
+margin:20px;
+border-radius:15px;
+
+}
+
+#customised-umbrella:hover{
+    transform:rotate(360 deg);
 
 }
 

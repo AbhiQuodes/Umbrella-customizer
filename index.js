@@ -25,7 +25,7 @@ function changeUmbrellaColor(imgSrc){
 
 
 Array.from(colorOptions).forEach(colorOption=>{
-    colorOption.addEventListener('click',(e)=>{
+    colorOption.addEventListener('pointerdown',(e)=>{
         if(e.target.id=='color-Pink')
         {
             changeUmbrellaColor('pink_umbrella.png');

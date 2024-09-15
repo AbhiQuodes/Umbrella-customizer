@@ -33,6 +33,7 @@ body {
 
 }
 
+
 .container {
     display: flex;
     margin: auto;
@@ -42,7 +43,7 @@ body {
     min-height: 100vh;
     box-shadow: 1px 2px 5px black;
     background-color: black;
-
+    
 
 }
 
@@ -64,7 +65,7 @@ body {
     min-width: 380px;
     justify-content: center;
     align-items: center;
-    background-color: rgb(144, 134, 134);
+    background-color: #fff;
 }
 
 h2 {
@@ -91,7 +92,7 @@ h2 {
 #heading {
     font-size: 1.6em;
     text-align: center;
-    margin: 40px;
+    margin: 20px;
     position: relative;
     top: -50px;
 
@@ -103,10 +104,11 @@ h2 {
     top: -40px;
     justify-items: center;
     align-items: center;
-    border: 2px solid rgb(40, 36, 36);
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 14px;
-    height: 60px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+   
 
 }
 
@@ -121,21 +123,21 @@ h2 {
 }
 
 #color-Pink {
-
-    background-color: pink;
-
+    
+    background-color:#ff1493
+    
 }
 
 #color-Blue {
 
-    background-color: blue;
+    background-color: #87ceeb;
 }
 
 #color-Yellow {
 
     background-color: Yellow;
-
-
+    
+    
 }
 
 .color-Options:hover {
@@ -145,17 +147,42 @@ h2 {
 }
 
 #logo-box {
-    width: 350px;
-    background-color: rgb(235, 235, 235);
+    display: flex;
+    min-width:300px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
     padding: 20px;
     margin: 20px;
     border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.file-label {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size:0.9em;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+    background-color: #0056b3;
+}
+
+/* Hide the actual file input */
+.file-input {
+    display: none;
 }
 
 
 .media-box:hover {
     animation: rotation 1.5s 1 ease-in-out;
-
+    
 }
 
 .rotate {
@@ -166,10 +193,25 @@ h2 {
 @keyframes rotation {
     from {
         transform: rotate(0deg);
-
+        
     }
-
+    
     to {
         transform: rotate(359deg);
     }
+}
+
+#download {
+    background-color: #28a745;
+    display:none;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#download:hover {
+    background-color: #218838;
 }

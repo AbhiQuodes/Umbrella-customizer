@@ -16,7 +16,7 @@
 
         <div class="media">
             <h2>Custom Umbrella</h2>
-            <div class="media-box">
+            <div class="media-box" id="media-id">
                 <img id="customised-umbrella" src="./assets/pink_umbrella.png">
                 <div class="display-logo"> </div>
             </div>
@@ -31,11 +31,20 @@
             <p>Upload a logo for an instanty preview</p>
             <h4>.png and .jpg files only Max file size is 5MB.</h4>
 
-            <div id="logo-box"> <input id="get-logo" type="file" accept="image/*"></div>
+            <div id="logo-box"> 
+                <!-- <input id="get-logo" class="inputBox" type="file" accept="image/*"> -->
+                <label for="file-input" class="file-label" id="get-logo">
+                    <span>Choose File</span>
+                    <input type="file" id="file-input" class="file-input">
+                </label>
+                <button  id="download">Download</button>
+            
+            </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+        <script src="index.js"></script>
 
-    <script src="index.js"></script>
 
 </body>
 

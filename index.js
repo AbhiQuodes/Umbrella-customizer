@@ -28,18 +28,18 @@ Array.from(colorOptions).forEach(colorOption=>{
     colorOption.addEventListener('pointerdown',(e)=>{
         if(e.target.id=='color-Pink')
         {
-            changeUmbrellaColor('pink_umbrella.png');
+            changeUmbrellaColor('./assets/pink_umbrella.png');
             colorSelects.style.borderColor='Pink'
             
         }
         else if(e.target.id=='color-Blue')
             {
-            changeUmbrellaColor('blue_umbrella.png');
+            changeUmbrellaColor('./assets/blue_umbrella.png');
             colorSelects.style.borderColor='Blue'
         }
         else
         {
-            changeUmbrellaColor('yellow_umbrella.png');
+            changeUmbrellaColor('./assets/yellow_umbrella.png');
             colorSelects.style.borderColor='Yellow'
         }
 
@@ -49,27 +49,30 @@ Array.from(colorOptions).forEach(colorOption=>{
 })
 
 
-getLogo.addEventListener('change',(event)=>{
-    const file = event.target;
+getLogo.addEventListener('change', (event) => {
+    const file = event.target.files[0];
     const reader = new FileReader();
-    
-    if(file)
-    {
-    
-    if(file.size > maxImgSize)
-    {
-        alert("File size exceeds a valid image file.");
-        getLogo=""; //clear the input;
-    }
-    else{
-        fileName= file.files[0].name;
-        reader.onload= function(e)
-    {
-        
-        display_logo.style.backgroungImage=`url(${e.target.result})`;
-    }
-    }
-    reader.readAsDataURL(file);
 
+    if (file) {
+        if (file.size > maxImgSize) {
+            alert("File size exceeds 5MB. Please upload a smaller file.");
+            getLogo.value = ""; 
+        } else {
+            reader.onload = function(e) {
+                const logoImg = document.createElement('img');
+                logoImg.src = e.target.result;
+                logoImg.style.position = 'relative';
+                logoImg.style.transform = 'translate(-50%, -50%)';
+                logoImg.style.width = '50px'; 
+                logoImg.style.height = '30px';
+                logoImg.style.top = '-40px'; 
+                logoImg.style.left='25px'
+                
+                display_logo.innerHTML = '';
+                
+                display_logo.appendChild(logoImg);
+            };
+            reader.readAsDataURL(file);
+        }
     }
-})
+});
